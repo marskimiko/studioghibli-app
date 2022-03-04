@@ -15,7 +15,15 @@ function getSchools() {
   fetch(BASE_URL)
   .then(res => res.json())
   .then(data => {
-    console.log('a')
+    // iterates over Lis to give me an array of the Lis
+    data.forEach(school => {
+      // go through each show, make an li and add it (append it) to the innerHTML of the ul
+      ul.innerHTML += `
+      <li>${school.name}</li>
+      
+      `
+      
+    })
   })
 
 }
