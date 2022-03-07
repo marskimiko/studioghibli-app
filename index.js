@@ -95,5 +95,3 @@ function handleSubmit(event) {
   // clear the input field
   film.value = "";
 }
-
-//////
