@@ -3,7 +3,7 @@ let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
   getFilms();
   document.getElementById("films").addEventListener("click", getFilms);
 
