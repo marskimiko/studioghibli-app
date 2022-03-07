@@ -1,10 +1,5 @@
 const fetchLink = "https://ghibliapi.herokuapp.com/films";
 let addFilm = false;
-
-// grabs ul where im gonna put the schools once I have them
-//const form = document.querySelector('.un');
-//const ul = document.getElementById('film-list');
-
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
 
@@ -13,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("films").addEventListener("click", getFilms);
 
   document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
-
-  //form.addEventListener('submit', handleSubmit)
 });
 
 function getFilms() {
@@ -30,7 +23,7 @@ function getFilms() {
     .then(res => res.json())
     .then(data => {
       // iterates over Lis to give me an array of the Lis
-      // data-id adss id as a key in the dataset
+      // data-id adds id as a key in the dataset
       data.forEach(film => {
         // go through each show, make an li and add it (append it) to the innerHTML of the ul
         ul.innerHTML += `
@@ -52,6 +45,7 @@ const attachClicksToLinks = () => {
 };
 
 const showFilm = event => {
+  // click on film and shows film's details 
   console.log(event.target.dataset.id);
   const info = document.getElementById("info");
   const ul = document.getElementById("film-list");
@@ -84,10 +78,14 @@ function addFilmButton() {
 
 function handleSubmit(event) {
   const ul = document.getElementById("film-list");
+
+  // prevent reloading of page when clicking submit
   event.preventDefault();
 
+  // get the input value
   const film = document.querySelector("#new-film-name");
 
+  //create new list element
   const newFilm = document.createElement("li");
   console.log(film);
   newFilm.textContent = film.value;
