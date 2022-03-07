@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Universities</title>
+    <title>studio ghibli films</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>Universities</h1>
-    <button id="universities">All Universities</button>
+    <h1>Studio Ghibli Films</h1>
+    <button id="films">All Films</button>
     <div id="main">
-      <ul id="univeristy-list"></ul>
+      <ul id="film-list"></ul>
       <div id="info"></div>
     </div>
+    <div class="container">
+      <form class="add-film-form" id="create-film-form" action="" method="POST">
+        <label for="new-film-description">Film description:</label>
+        <h3>Add a Film!</h3>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a film's name..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="description"
+          value=""
+          placeholder="Enter a film's description..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Add Film"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p>
+      <button id="new-film-btn">Add a missing film!</button>
+    </p>
     <!-- <footer class="branding">
     </footer> -->
     <script src="index.js"></script>
   </body>
-</html>
+</html> 
