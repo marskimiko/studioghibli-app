@@ -1,5 +1,5 @@
 const fetchLink = "https://ghibliapi.herokuapp.com/films";
-// let addFilm = false;
+let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
 
