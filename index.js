@@ -38,7 +38,7 @@ function getFilms() {
 }
 
 const attachClicksToLinks = () => {
-  const films = document.querySelectorAll("a");
+  const films = document.querySelectorAll("b");
   films.forEach(film => {
     film.addEventListener("click", showFilm);
   });
