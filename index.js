@@ -85,21 +85,13 @@ function addFilmButton() {
 } 
 
 function handleSubmit(event){
-  //getFilms()
   const ul = document.getElementById('film-list');
-  // prevent reloading of page preventDefault
   event.preventDefault();
 
-  // get the input value
   const film = document.querySelector("#new-film-description");
   
-  // one you click on submit, do things with input value
-  // extract the value of the input
-
-  // create new list element
   const newFilm = document.createElement('li');
   newFilm.textContent = film.value;
-
 
   ul.append(newFilm);
 
