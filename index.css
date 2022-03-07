@@ -30,16 +30,13 @@ body {
 }
 
 button {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background-color: #1d1d1b;
+  background-color: #000000;
   border: none;
   border-radius: 5px;
   height: 3rem;
   width: max-content;
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 40px;
   justify-self: center;
 }
 
