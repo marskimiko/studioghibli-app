@@ -95,3 +95,6 @@ function handleSubmit(event) {
   // clear the input field
   film.value = "";
 }
+
+// BLOG POST:
+// “I understand fetch requests, but how do I get my data to show up on the page?” 
