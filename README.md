@@ -1,4 +1,4 @@
-# Studio Ghibli-app
+# Studio Ghibli-App
 // url of repo:
 
 https://github.com/marskimiko/studioghibli-app
