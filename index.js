@@ -37,12 +37,12 @@ function getFilms() {
     });
 }
 
-// const attachClicksToLinks = () => {
-//   const films = document.querySelectorAll("a");
-//   films.forEach(film => {
-//     film.addEventListener("click", showFilm);
-//   });
-// };
+const attachClicksToLinks = () => {
+  const films = document.querySelectorAll("a");
+  films.forEach(film => {
+    film.addEventListener("click", showFilm);
+  });
+};
 
 const showFilm = event => {
   // click on film and shows film's details 
