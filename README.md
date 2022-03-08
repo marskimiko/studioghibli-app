@@ -22,7 +22,7 @@ This application is a database of Studio Ghibli Films. It uses a public API of a
 
 The event listeners used in this application are DOMContentLoaded two click events, as well as a submit event. 
 
-Upon clicking on the film the page then loads the name of the film, its description, date of release and rotten tomato score. In order to return to the full list of films you can click on the "All Films" button at the top of the page. You can also add a film to the list if there is anything listening by clicking the "Add Missing Film!" button which triggers a form to appear on the page where you can enter the missing information.
+Upon clicking on the film the page then loads the name of the film, its description, date of release and rotten tomato score. In order to return to the full list of films you can click on the "All Films" button at the top of the page. You can also add a film to the list if there is anything missing by clicking the "Add Missing Film!" button which triggers a form to appear on the page where you can enter the missing information.
 
 ## How to Use:
 
