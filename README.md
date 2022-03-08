@@ -32,7 +32,9 @@ Step 2: Click on the "All Films" button to return to the full list of films
 
 ![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
 
-![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (2).gif)
+Step 3: If you think that there is a missing film from the list click on the "Add a missing film!" button and a form where you can submit the Film will appear
+
+![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/2df9df67-017b-4649-82b8-d1a81bf42805.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=544d5b7f632e61504b3de1dac560ee075df2950e)
 
 ![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (3).gif)
 
