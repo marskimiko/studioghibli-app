@@ -1,5 +1,6 @@
 # Studio Ghibli-App
-// url of repo:
+
+## Repository URL
 
 https://github.com/marskimiko/studioghibli-app
 
