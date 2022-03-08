@@ -26,7 +26,9 @@ How to Use:
 
 Step 1: Click on a film from the list to read the description, release date, running time, and Rotten Tomato Score
 
-![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
+![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/f85dc381-0cdc-46fc-bc0d-33e3d92fdd30.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=0a71b65287578fc248151649d3acf9019c6b52b0)
+
+Step 2: Click on the "All Films" button to return to the full list of films
 
 ![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
 
