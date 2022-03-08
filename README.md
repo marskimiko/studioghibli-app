@@ -24,6 +24,15 @@ Upon clicking on the film the page then loads the name of the film, its descript
 
 How to Use:
 
+![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high.gif)
+
+![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (1).gif)
+
+![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (2).gif)
+
+![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (3).gif)
+
+
 
 
 Put GIFs here
