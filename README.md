@@ -6,11 +6,12 @@ https://github.com/marskimiko/studioghibli-app
 
 ## Project Philosophy:
 
-This project was made with the intention of providing a space where you can easily access all of the different Sutdio Ghibli Films and information about them to help you decide which film to watch.
+This project was made with the intention of providing a space where you can easily access all of the different Studio Ghibli Films and information about.
 
-Hayao Miyazakim is about to release his last film and its imporant to have a place where people can go to quickly access the new iformation to preserve the importance of these films, espcially for newer generations who did not group up with them. 
+I was inspired to make this application as a lover Hayao Miyazaki's films and the fact that he is about to release his last film and it was imporant to me to to have a place to go where I read more about them. 
 
 ## Features: 
+
 - Displays a list of all Studio Ghibli films
 - Provides description, release date, run time, and rotten tomato score for each film
 - Can add films that may not be listed
@@ -41,7 +42,8 @@ Upon clicking on the film the page then loads the name of the film, its descript
 
 ![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/1bd2fd79-be9a-4cf2-af3b-e51611e96bc4.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=de376078c110873b7a45ab70313a563284fbb0ab)
 
-Technologies used:
+## Technologies used:
+
 - Vanilla JavaScript
 - HTML
 - CSS

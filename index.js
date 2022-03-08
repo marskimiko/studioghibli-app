@@ -57,10 +57,10 @@ const showFilm = event => {
       info.innerHTML = `<h1>${data.title}</h1>
 <h3>Description:</h3>
 <p>${data.description}</p>
-<h3>Realse Date:</h3>
+<h3>Release Date:</h3>
 <p>${data.release_date}</p>
 <h3>Running Time:</h3>
-<p>${data.running_time}</p>
+<p>${data.running_time} minutes</p>
 <h3>Rotten Tomato:</h3>
 <p>${data.rt_score}%</p>`;
     });
