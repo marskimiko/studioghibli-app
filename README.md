@@ -24,9 +24,11 @@ Upon clicking on the film the page then loads the name of the film, its descript
 
 How to Use:
 
-![First: Click on a film from the list to read the description, release date, running time, and Rotten Tomato Score](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
+Step 1: Click on a film from the list to read the description, release date, running time, and Rotten Tomato Score
 
-![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (1).gif)
+![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
+
+![Alt Text](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/313ae811-a7a1-45a9-838d-25734842cb70.gif?ClientID=vimeo-core-prod&Date=1646690609&Signature=4e6aa21081a3ab2130d5b937a4a256b7db7c26c4)
 
 ![](Screen Recording 2022-03-07 at 4.40.43 PM.mov-high (2).gif)
 
