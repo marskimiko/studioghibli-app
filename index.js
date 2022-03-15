@@ -160,6 +160,11 @@ function getFilms() {
 
       likeButton.addEventListener('click', () => {
         console.log('boop')
+        let likes = document.querySelector('.likes')
+        num = parseInt(likes.innerText)
+        num += 1
+        likes.innerText = `${num} likes`
+        console.log(num)
       })
     });
 }
