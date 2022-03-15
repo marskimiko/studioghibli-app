@@ -132,7 +132,7 @@ function getFilms() {
         ul.innerHTML += `
       <li>
       <a href="#" data-id="${film.id}">${film.title}</a>
-      <button id="like-button">♥</button>
+      <button class="like-button">♥</button>
       <span id="likes">0 likes</span>
       </li>
       `;
@@ -140,6 +140,8 @@ function getFilms() {
       attachClicksToLinks();
       
       likeFeature();
+
+      // searchFilms();
     
     });
 }
@@ -203,25 +205,8 @@ function handleSubmit(event) {
   film.value = "";
 }
 
-// function likeFeature() {
-//   const likeButton = document.querySelectorAll('#like-button')
-//   console.log(likeButton)
-
-//   likeButton.forEach(likeButton => {
-//     likeButton.addEventListener("click", () => {
-//       console.log('boop')
-//       let likes = document.querySelector('#likes')
-//       console.log(likes)
-//       num = parseInt(likes.innerText)
-//       num += 1
-//       likes.innerText = `${num} likes`
-//       console.log(num)
-//     });
-//   });
-// }
-
 function likeFeature() {
-  const likeButton = document.querySelector('#like-button')
+  const likeButton = document.querySelector('.like-button')
   console.log(likeButton)
 
   likeButton.addEventListener("click", incrementLikes)
@@ -240,3 +225,20 @@ function incrementLikes() {
   likes.innerText = `${num} likes`
   console.log(num)
 }
+
+// function searchFilms() {
+//   const input = document.getElementById('myInput')
+//   const filter = input.value.toUpperCase();
+//   const ul = document.getElementById("film-list");
+//   const li = ul.getElementsByTagName('li')
+
+//   for (i = 0; i < li.length; i++) {
+//     a = li[i].getElementsByTagName("a")[0];
+//     txtValue = a.textConent || a.innerText;
+//     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//       li[i].style.display = "";
+//     } else {
+//       li[i].style.display = "none;"
+//     }
+//   }
+// }
