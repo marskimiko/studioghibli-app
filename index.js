@@ -105,8 +105,8 @@ const fetchLink = "https://ghibliapi.herokuapp.com/films";
 let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
-const likeButton = document.querySelector('.like-button')
-const likesCounter = document.querySelector('.likes')
+// const likeButton = document.querySelector('like-button');
+// let likesCounter = document.querySelector('.likes')
 
 document.addEventListener("DOMContentLoaded", () => {
   getFilms();
@@ -114,15 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
 
+
   // likeButton.addEventListener('click', function(event) {
   //   likesCounter.innerHTML = incrementLikes()
   // })
 
-  likeButton.addEventListener('click', () => {
-    num = parseInt(likesCounter.innerText)
-    num += 1
-    likesCounter.innerText = num
-  })
+  // likeButton.addEventListener('click', () => {
+  //   num = parseInt(likesCounter.innerText) + 1
+  //   num += 1
+  //   likesCounter.innerText = num
+  // })
 });
 
 function getFilms() {
@@ -149,6 +150,14 @@ function getFilms() {
       </li>
       
       `;
+        const likeButton = document.querySelector('.like-button')
+        //console.log(likeButton)
+        likeButton.addEventListener('click', () => {
+          console.log('boop')
+        })
+        // likeButton.addEventListener('click', () => {
+        //   console.log('boop')
+        // })
       });
       attachClicksToLinks();
     });
@@ -214,10 +223,20 @@ function handleSubmit(event) {
 }
 
 // function incrementLikes(){
-//   let likes = 0
-//   let newLikes = likes + 1
+//   console.log('boop')
+//   // let likes = 0
+//   // let newLikes = likes + 1
 
-//   let likesText = `${newLikes} likes`
-//   return likesText
+//   // let likesText = `${newLikes} likes`
+//   // return likesText
 // }
 
+// likeButton.addEventListener('click', () => {
+//   console.log(boop);
+// })
+
+// function likeFunction() {
+// likeButton.addEventListener('click', () => {
+//   console.log('boop')
+// })
+// }
