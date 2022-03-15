@@ -155,7 +155,7 @@ function getFilms() {
       });
       attachClicksToLinks();
       
-      const likeButton = document.querySelector('.like-button')
+      const likeButton = document.querySelectorAll('.like-button')
       console.log(likeButton)
 
       likeButton.addEventListener('click', () => {
