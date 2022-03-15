@@ -134,7 +134,7 @@ function getFilms() {
         ul.innerHTML += `
       <li>
       <a href="#" data-id="${film.id}">${film.title}</a>
-      <button class="like-button">♥</button>
+      <button id="like-button">♥</button>
       <span class="likes">0 likes</span>
       </li>
       
@@ -142,17 +142,19 @@ function getFilms() {
      });
       attachClicksToLinks();
       
-      const likeButton = document.querySelectorAll('.like-button')
-      console.log(likeButton)
+      likeFeature();
+      
+      // const likeButton = document.querySelectorAll('.like-button')
+      // console.log(likeButton)
 
-      likeButton.addEventListener('click', () => {
-        console.log('boop')
-        let likes = document.querySelector('.likes')
-        num = parseInt(likes.innerText)
-        num += 1
-        likes.innerText = `${num} likes`
-        console.log(num)
-      })
+      // likeButton.addEventListener('click', () => {
+      //   console.log('boop')
+      //   let likes = document.querySelector('.likes')
+      //   num = parseInt(likes.innerText)
+      //   num += 1
+      //   likes.innerText = `${num} likes`
+      //   console.log(num)
+      // })
     });
 }
 
@@ -213,4 +215,18 @@ function handleSubmit(event) {
 
   // clear the input field
   film.value = "";
+}
+
+function likeFeature() {
+  const likeButton = document.querySelectorAll('#like-button')
+      console.log(likeButton)
+
+      likeButton.addEventListener('click', () => {
+        console.log('boop')
+        let likes = document.querySelector('.likes')
+        num = parseInt(likes.innerText)
+        num += 1
+        likes.innerText = `${num} likes`
+        console.log(num)
+      })
 }
