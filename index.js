@@ -221,12 +221,14 @@ function handleSubmit(event) {
 // }
 
 function likeFeature() {
-  const likeButton = document.querySelectorAll('#like-button')
+  const likeButton = document.querySelector('#like-button')
   console.log(likeButton)
 
-  likeButton.forEach(likeButton => {
-    likeButton.addEventListener("click", incrementLikes)
-  })
+  likeButton.addEventListener("click", incrementLikes)
+
+  // likeButton.forEach(likeButton => {
+  //   likeButton.addEventListener("click", incrementLikes)
+  // })
 }
 
 function incrementLikes() {
