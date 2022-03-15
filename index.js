@@ -113,17 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("films").addEventListener("click", getFilms);
 
   document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
-
-
-  // likeButton.addEventListener('click', function(event) {
-  //   likesCounter.innerHTML = incrementLikes()
-  // })
-
-  // likeButton.addEventListener('click', () => {
-  //   num = parseInt(likesCounter.innerText) + 1
-  //   num += 1
-  //   likesCounter.innerText = num
-  // })
 });
 
 function getFilms() {
@@ -150,9 +139,7 @@ function getFilms() {
       </li>
       
       `;
-        // const likeButton = document.querySelector('.like-button')
-        // console.log(likeButton)
-      });
+     });
       attachClicksToLinks();
       
       const likeButton = document.querySelectorAll('.like-button')
@@ -227,22 +214,3 @@ function handleSubmit(event) {
   // clear the input field
   film.value = "";
 }
-
-// function incrementLikes(){
-//   console.log('boop')
-//   // let likes = 0
-//   // let newLikes = likes + 1
-
-//   // let likesText = `${newLikes} likes`
-//   // return likesText
-// }
-
-// likeButton.addEventListener('click', () => {
-//   console.log(boop);
-// })
-
-// function likeFunction() {
-// likeButton.addEventListener('click', () => {
-//   console.log('boop')
-// })
-// }
