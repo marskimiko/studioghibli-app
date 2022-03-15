@@ -150,16 +150,17 @@ function getFilms() {
       </li>
       
       `;
-        const likeButton = document.querySelector('.like-button')
-        //console.log(likeButton)
-        likeButton.addEventListener('click', () => {
-          console.log('boop')
-        })
-        // likeButton.addEventListener('click', () => {
-        //   console.log('boop')
-        // })
+        // const likeButton = document.querySelector('.like-button')
+        // console.log(likeButton)
       });
       attachClicksToLinks();
+      
+      const likeButton = document.querySelector('.like-button')
+      console.log(likeButton)
+
+      likeButton.addEventListener('click', () => {
+        console.log('boop')
+      })
     });
 }
 
