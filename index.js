@@ -105,8 +105,6 @@ const fetchLink = "https://ghibliapi.herokuapp.com/films";
 let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
-// const likeButton = document.querySelector('like-button');
-// let likesCounter = document.querySelector('.likes')
 
 document.addEventListener("DOMContentLoaded", () => {
   getFilms();
@@ -135,26 +133,14 @@ function getFilms() {
       <li>
       <a href="#" data-id="${film.id}">${film.title}</a>
       <button id="like-button">♥</button>
-      <span class="likes">0 likes</span>
+      <span id="likes">0 likes</span>
       </li>
-      
       `;
      });
       attachClicksToLinks();
       
       likeFeature();
-      
-      // const likeButton = document.querySelectorAll('.like-button')
-      // console.log(likeButton)
-
-      // likeButton.addEventListener('click', () => {
-      //   console.log('boop')
-      //   let likes = document.querySelector('.likes')
-      //   num = parseInt(likes.innerText)
-      //   num += 1
-      //   likes.innerText = `${num} likes`
-      //   console.log(num)
-      // })
+    
     });
 }
 
@@ -219,16 +205,19 @@ function handleSubmit(event) {
 
 // function likeFeature() {
 //   const likeButton = document.querySelectorAll('#like-button')
-//       console.log(likeButton)
+//   console.log(likeButton)
 
-//       likeButton.addEventListener('click', () => {
-//         console.log('boop')
-//         let likes = document.querySelector('.likes')
-//         num = parseInt(likes.innerText)
-//         num += 1
-//         likes.innerText = `${num} likes`
-//         console.log(num)
-//       })
+//   likeButton.forEach(likeButton => {
+//     likeButton.addEventListener("click", () => {
+//       console.log('boop')
+//       let likes = document.querySelector('#likes')
+//       console.log(likes)
+//       num = parseInt(likes.innerText)
+//       num += 1
+//       likes.innerText = `${num} likes`
+//       console.log(num)
+//     });
+//   });
 // }
 
 function likeFeature() {
@@ -236,22 +225,16 @@ function likeFeature() {
   console.log(likeButton)
 
   likeButton.forEach(likeButton => {
-    likeButton.addEventListener("click", () => {
-      console.log('boop')
-      let likes = document.querySelector('.likes')
-      num = parseInt(likes.innerText)
-      num += 1
-      likes.innerText = `${num} likes`
-      console.log(num)
-    });
-  });
+    likeButton.addEventListener("click", incrementLikes)
+  })
 }
 
-// function likeAllFilms() {
-//   console.log('boop')
-//   let likes = document.querySelector('.likes')
-//   num = parseInt(likes.innerText)
-//   num += 1
-//   likes.innerText = `${num} likes`
-//   console.log(num)
-// }
+function incrementLikes() {
+  console.log('boop')
+  let likes = document.querySelector('#likes')
+  console.log(likes)
+  num = parseInt(likes.innerText)
+  num += 1
+  likes.innerText = `${num} likes`
+  console.log(num)
+}
