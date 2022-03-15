@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>studio ghibli films</title>
@@ -27,14 +27,52 @@
           class="input-text"
         />
         <br />
-        <!-- <input
-          id="new-film-description"
+        <input
+          id="submitBtn"
+          type="submit"
+          name="submit"
+          value="Add Film"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p style="text-align:center">
+      <button id="new-film-btn">Add a missing film!</button>
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html> -->
+
+<!-- testing likes  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>studio ghibli films</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Studio Ghibli Films</h1>
+    <p style="text-align:center">
+    <button id="films">All Films</button>
+  </p>
+    <div id="main">
+      <ul id="film-list"></ul>
+      <div id="info"></div>
+    </div>
+    <div class="container">
+      <form class="add-film-form" id="create-film-form" action="" method="POST">
+        <label for="new-film-description"></label>
+        <h3>Add a Film!</h3>
+
+        <input
+          id="new-film-name"
           type="text"
-          name="description"
+          name="name"
           value=""
-          placeholder="Enter a film's description..."
+          placeholder="Enter a film's name..."
           class="input-text"
-        /> -->
+        />
         <br />
         <input
           id="submitBtn"
