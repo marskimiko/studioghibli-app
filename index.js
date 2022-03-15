@@ -105,12 +105,18 @@ const fetchLink = "https://ghibliapi.herokuapp.com/films";
 let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
+const likeButton = document.querySelector('.like-button')
+const likesCounter = document.querySelector('.likes')
 
 document.addEventListener("DOMContentLoaded", () => {
   getFilms();
   document.getElementById("films").addEventListener("click", getFilms);
 
   document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
+
+  likeButton.addEventListener('click', function(event) {
+    likesCounter.innerHTML = incrementLikes()
+  })
 });
 
 function getFilms() {
@@ -132,6 +138,8 @@ function getFilms() {
         ul.innerHTML += `
       <li>
       <a href="#" data-id="${film.id}">${film.title}</a>
+      <button class="like-button">♥</button>
+      <span class="likes">0 likes</span>
       </li>
       
       `;
@@ -197,4 +205,12 @@ function handleSubmit(event) {
 
   // clear the input field
   film.value = "";
+}
+
+function incrementLikes(){
+  let likes = 0
+  let newLikes = likes + 1
+
+  let likesText = `${newLikes} likes`
+  return likesText
 }
