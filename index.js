@@ -114,8 +114,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
 
-  likeButton.addEventListener('click', function(event) {
-    likesCounter.innerHTML = incrementLikes()
+  // likeButton.addEventListener('click', function(event) {
+  //   likesCounter.innerHTML = incrementLikes()
+  // })
+
+  likeButton.addEventListener('click', () => {
+    num = parseInt(likesCounter.innerText)
+    num += 1
+    likesCounter.innerText = num
   })
 });
 
@@ -207,10 +213,11 @@ function handleSubmit(event) {
   film.value = "";
 }
 
-function incrementLikes(){
-  let likes = 0
-  let newLikes = likes + 1
+// function incrementLikes(){
+//   let likes = 0
+//   let newLikes = likes + 1
 
-  let likesText = `${newLikes} likes`
-  return likesText
-}
+//   let likesText = `${newLikes} likes`
+//   return likesText
+// }
+
