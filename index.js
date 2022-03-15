@@ -217,16 +217,34 @@ function handleSubmit(event) {
   film.value = "";
 }
 
+// function likeFeature() {
+//   const likeButton = document.querySelectorAll('#like-button')
+//       console.log(likeButton)
+
+//       likeButton.addEventListener('click', () => {
+//         console.log('boop')
+//         let likes = document.querySelector('.likes')
+//         num = parseInt(likes.innerText)
+//         num += 1
+//         likes.innerText = `${num} likes`
+//         console.log(num)
+//       })
+// }
+
 function likeFeature() {
   const likeButton = document.querySelectorAll('#like-button')
       console.log(likeButton)
 
-      likeButton.addEventListener('click', () => {
-        console.log('boop')
+      likeButton.forEach(likeButton => {
+        likeButton.addEventListener("click", likeAllFilms);
+      });
+}
+
+function likeAllFilms() {
+  console.log('boop')
         let likes = document.querySelector('.likes')
         num = parseInt(likes.innerText)
         num += 1
         likes.innerText = `${num} likes`
         console.log(num)
-      })
 }
