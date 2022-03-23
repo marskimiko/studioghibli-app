@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   getFilms();
   document.getElementById("films").addEventListener("click", getFilms);
 
-  document.querySelector("#submitBtn").addEventListener("click", handleSubmit);
+  document.querySelector("#create-film-form").addEventListener("submit", handleSubmit);
+
+  document.getElementById("colorize").addEventListener('click', handleColorize);
 });
 
 // tghis function gets the films from the api and puts them on the page
@@ -84,4 +86,11 @@ function handleSubmit(event) {
   newFilm.textContent = film.value;
   ul.appendChild(newFilm);
   film.value = "";
+}
+
+
+function handleColorize() {
+  document.querySelectorAll('li').forEach(li => li.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16))
+  // target li's
+  // go through each li one by one
 }
