@@ -4,8 +4,6 @@ let addFilm = false;
 const addBtn = document.querySelector("#new-film-btn");
 addBtn.addEventListener("click", addFilmButton);
 
-//anonymous arrow function to do when the dom is loaded
-// uses getFilms() to get the films and put them on the page
 document.addEventListener("DOMContentLoaded", () => {
   getFilms();
   document.getElementById("films").addEventListener("click", getFilms);
@@ -15,32 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // tghis function gets the films from the api and puts them on the page
 function getFilms() {
-  // grabs main ul as place we are going to put the films once we fetch them
   const ul = document.getElementById("film-list");
-
-  // where we oput the information about the film
   const info = document.getElementById("info");
-
-  //empties out the content so we can determine what goes inside using innerHTML
   info.innerHTML = "";
   ul.innerHTML = "";
-    
-  // fetch allows for asynchornus execution (allows execution to continute while fetch is being worked on)
-  // two things fetch does is sends an HTTP GET request (default) and instantaneoulsy returns a promise object
-  // promise object statuses: pending, fulfilled, rejected(failed)
 
   fetch(fetchLink)
-    
-     // .then is called on the promise object to keep checking the status of the fetch request to see if it has been exectured yet, once its done it will execute the .then
-    // response.json converts JSON which returns a promise which we return from our callback function(returning the content from the response after converting it into the format we need
     .then(response => response.json())
-
-    // . then receives the promise object returned from the first call to .then. We then capture the object in the parameter 'data' and pass it into a second callback function where we write code to do DOM maniputlation using the data returned from the server
     .then(data => {
-      // iterates over Lis to give me an array of the Lis
-      // data-id adds id as a key in the dataset
       data.forEach(film => {
-        // go through each show, make an li and add it (append it) to the innerHTML of the ul
         ul.innerHTML += `
       <li>
       <a href="#" data-id="${film.id}">${film.title}</a>
@@ -92,21 +73,15 @@ function addFilmButton() {
 }
 
 function handleSubmit(event) {
-  const ul = document.getElementById("film-list");
-
-  // prevent reloading of page when clicking submit
   event.preventDefault();
-
-  // get the input value
+  
+  const ul = document.getElementById("film-list");
   const film = document.querySelector("#new-film-name");
-
-  //create new list element
   const newFilm = document.createElement("li");
+  
   console.log(film);
+  
   newFilm.textContent = film.value;
-
   ul.appendChild(newFilm);
-
-  // clear the input field
   film.value = "";
 }
